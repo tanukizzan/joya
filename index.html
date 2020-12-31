@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://app.tanukizzan.com/joya/" />
+  <meta property="og:title" content="除夜の鐘" />
+  <meta property="og:image" content="https://app.tanukizzan.com/joya/media/joyanokane.png" />
+  <meta property="og:description" content="ネットで除夜の鐘を撞くことができるサイトです。108回撞くと何かが起きます。" />
+  <title>除夜の鐘</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1>除夜の鐘</h1>
+  <p id="time">時刻が表示されます</p>
+  <div class="img-area">
+    <img src="./media/odo.png" alt="除夜の鐘" id="joya-back">
+    <img src="./media/kane.png" alt="鐘" id="kane">
+    <audio src="./media/kane.mp3" id="kane-sound"></audio>
+  </div>
+  <p>回数：<span id="count">0</span></p>
+  <p id="result">鐘を108回クリックしてみよう！<br>108回目は年越しの瞬間にクリックしてね！</p>
+  <p><a href="https://app.tanukizzan.com">&copy; 2020 Tanukizzan</a></p>
+  <script src="./script.js"></script>
+</body>
+</html>

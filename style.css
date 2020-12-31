@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  flex-flow: column;
+  font-size: 20px;
+  margin: auto;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+#time {margin: 0 auto 1rem auto;}
+
+.img-area {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.img-area img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-area #kane {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+}
+
+.animation {animation: vibration 0.5s  infinite;}
+
+@keyframes vibration {
+  0% {transform: rotateZ(0deg)}
+  25% {transform: rotateZ(1.5deg)}
+  50% {transform: rotateZ(0deg)}
+  75% {transform: rotateZ(-1.5deg)}
+  100% {transform: rotateZ(0deg)}
+}
+
+a {text-decoration: none; color: #333;}
+a:hover {text-decoration: underline;}
