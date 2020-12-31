@@ -17,7 +17,7 @@ function set2fig(num) {
 function clock() {
   const now = new Date();
   const youbi = ['日', '月', '火', '水', '木', '金', '土'];
-  time.innerHTML = now.getFullYear() + '年 ' + (set2fig(now.getMonth()) + 1) + '月' + set2fig(now.getDate()) + '日' + youbi[now.getDay()] + '曜日 ' + set2fig(now.getHours()) + '時' + set2fig(now.getMinutes()) + '分' + set2fig(now.getSeconds()) + '秒';
+  time.innerHTML = now.getFullYear() + '年 ' + (now.getMonth() + 1) + '月' + set2fig(now.getDate()) + '日' + youbi[now.getDay()] + '曜日 ' + set2fig(now.getHours()) + '時' + set2fig(now.getMinutes()) + '分' + set2fig(now.getSeconds()) + '秒';
 }
 setInterval('clock()',1000);
 
