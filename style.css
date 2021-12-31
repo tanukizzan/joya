@@ -1,10 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap');
+
+html {
+  min-height: 100%;
+}
+
 body {
   display: flex;
   flex-flow: column;
   font-size: 20px;
   margin: auto;
   text-align: center;
-  font-family: sans-serif;
+  background-color: #000;
+  background-image: url('./media/background.jpg');
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  font-family: 'Yuji Syuku', serif;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  table-layout: fixed;
+  user-select: none;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+main {
+  display: block;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  width: 90%;
+  max-width: 30rem;
+  margin: 2rem auto;
+  border-radius: 30px;
 }
 
 #time {margin: 0 auto 1rem auto;}
@@ -39,5 +69,5 @@ body {
   100% {transform: rotateZ(0deg)}
 }
 
-a {text-decoration: none; color: #333;}
-a:hover {text-decoration: underline;}
+a {text-decoration: none; color: #cccccc;}
+a:hover {text-decoration: underline; color: #ffffff;}
