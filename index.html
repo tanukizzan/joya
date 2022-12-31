@@ -7,24 +7,27 @@
   <meta name="twitter:card" content="summary" />
   <meta property="og:url" content="https://app.tanukizzan.com/joya/" />
   <meta property="og:title" content="除夜の鐘" />
-  <meta property="og:image" content="https://app.tanukizzan.com/joya/media/joyanokane.png" />
+  <meta property="og:image" content="https://app.tanukizzan.com/joya/media/joyanokane.webp" />
   <meta property="og:description" content="ネットで除夜の鐘を撞くことができるサイトです。108回撞くと何かが起きます。" />
   <title>除夜の鐘</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+  <div class="background"></div>
+  <div id="particles-js"></div>
   <main>
     <h1>除夜の鐘</h1>
     <p id="time">時刻が表示されます</p>
     <div class="img-area">
-      <img src="./media/odo.png" alt="除夜の鐘" id="joya-back">
-      <img src="./media/kane.png" alt="鐘" id="kane">
+      <img src="./media/odo.webp" alt="除夜の鐘" id="joya-back">
+      <img src="./media/kane.webp" alt="鐘" id="kane">
       <audio src="./media/kane.mp3" id="kane-sound"></audio>
     </div>
     <p>回数：<span id="count">0</span></p>
     <p id="result">鐘を108回クリックしてみよう！<br>108回目は年越しの瞬間にクリックしてね！</p>
     <p><a href="https://app.tanukizzan.com">app.tanukizzan.com</a></p>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="./script.js"></script>
   </main>
 </body>
